@@ -1,0 +1,6 @@
+Test Login
+
+Enter the stored value "E-mail Address"  into "E-mail Address"
+Enter the stored value "Password"  into "Password"
+Click "Login"
+check that page contains "Welcome"
