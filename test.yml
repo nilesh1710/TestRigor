@@ -2,12 +2,10 @@ name: Run TestRigor Tests
 
 on:
   push:
-    branches:
-      - master
+    branches: [main]
   pull_request:
-    branches:
-      - master
-  workflow_dispatch:  # allows manual trigger
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   test:
@@ -17,8 +15,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Run TestRigor Tests
-        uses: testrigor/ci-action@latest
+      - name: Run TestRigor test suite
+        uses: testrigor/ci-action@v1
         with:
           test_suite_id: ${{ secrets.TESTRIGOR_SUITE_ID }}
           api_token: ${{ secrets.TESTRIGOR_API_TOKEN }}
