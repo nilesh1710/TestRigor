@@ -4,3 +4,690 @@ Enter the stored value "E-mail Address"  into "E-mail Address"
 Enter the stored value "Password"  into "Password"
 Click "Login"
 check that page contains "Welcome"
+
+Test Login
+
+Enter the stored value "E-mail Address"  into "E-mail Address"
+Enter the stored value "Password"  into "Password"
+Click "Login"
+check that page contains "Welcome"
+
+1	Verify Login	
+Enter  "h68@yopmail.com"  into "E-mail Address"
+Enter  "Nilesh@2025"  into "Password"
+Click on the "Login" button
+
+2	Verify Logout
+Enter  "h68@yopmail.com"  into "E-mail Address"
+Enter  "Nilesh@2025"  into "Password"
+Click on the "Login" button
+Click on the image inside the top navigation bar
+Click on the "Sign out"button
+Check that the page contains "Sign into Your Account"
+
+3	Verify Online Signup
+Click on "Register here"
+Click on "Register using our online application"
+Enter "h9@yopmail.com" into "E-mail Address"
+Click on "Submit"
+open url "https://yopmail.com/"
+Enter "h9@yopmail.com" into "login"
+ Click on "material-icons-outlined f36"
+ Click on " Register Now"
+Enter "Vipul" into "First Name"
+Enter "Day" into "Last Name "
+Enter "Nilesh@2025" into "password"
+Enter "Nilesh@2025" into "Confirm Password"
+Enter "1786546785" into "Mobile Number"
+Enter "110011" into "Zip Code"
+scroll down
+Click on the "Register"
+
+4	Verify Upload by resumeSignup
+
+Click on "Register here"
+Click on "Register by uploading your resume"
+Enter stored value "Uploadresumedocx" into the input file "fileUpload"
+Click on "Submit"
+scroll down
+Click on "id_frm_submit_resume_data"
+Check that the page contains "Account created successfully. Please check your email to set your password"
+open url "https://yopmail.com/"
+Enter "resumetest@yopmail.com" into "login"
+ Click on "material-icons-outlined f36"
+ Click on " Set Password"
+Enter "Nilesh@2025" into "Password"
+Enter "Nilesh@2025" into "Confirm Password"
+Click on the "id_frm_submit_reset_pwd"
+Check that the page contains "Password has been set"
+
+5	Verify Profile
+"Login
+open url ""https://dev.kredsafe.net/user/overview""
+Enter ""1238985432"" into ""Social Security Number (SSN)""
+Enter ""11/11/1994"" into ""Date of Birth""
+Enter ""United States"" into ""Country""
+Enter ""New York"" into ""state-list""
+Click on the ""Save & Continue""
+Check  that the page contains ""Work""
+wait for 10 sec
+//Work-experiences
+//open url ""https://dev.kredsafe.net/user/work-experiences""
+Enter ""Test"" into ""Company Name""
+Enter ""Test"" into ""Job Title""
+Enter ""United States"" into ""Country""
+Enter ""New York"" into ""State ""
+Enter ""New York"" into ""City / Region""
+Click on ""Yes""
+Enter ""Jan"" into ""start_month""
+Enter ""2021"" into ""we_start_year_identity_0""
+scroll down
+Click on ""Save & Continue""
+wait for 10 sec
+//Education
+open url ""https://dev.kredsafe.net/user/education""
+Enter ""Test"" into ""Institution Name""
+Enter ""Test"" into ""Subject of Study ""
+Enter ""United States"" into ""Country""
+Enter ""New York"" into ""State ""
+Enter ""New York"" into ""City / Region""
+Click on ""Yes""
+Enter ""Jan"" into ""start_month""
+Enter ""2021"" into ""we_start_year_identity_0""
+scroll down
+Click on ""Save & Continue""
+wait for 10 sec
+//professional-education
+//open url""https://dev.kredsafe.net/user/professional-education""
+Enter ""Test"" into ""Institution Name""
+Enter ""Test"" into ""Subject of Study ""
+Enter ""United States"" into ""Country""
+Enter ""New York"" into ""State ""
+Enter ""New York"" into ""City / Region""
+Click on ""Yes""
+Enter ""Jan"" into ""start_month""
+Enter ""2021"" into ""we_start_year_identity_0""
+scroll down
+Click on ""Save & Continue""
+wait for 10 sec
+intership
+open url""https://dev.kredsafe.net/user/internship""
+Enter ""Test"" into ""Job Title""
+Enter ""Test"" into ""Employer ""
+Enter ""United States"" into ""Country""
+Enter ""New York"" into ""State ""
+Enter ""New York"" into ""city""
+Enter ""Jan"" into ""start_month""
+Enter ""2021"" into ""we_start_year_identity_0""
+Enter ""Feb"" into ""end_month""
+Enter ""2024"" into ""we_end_year_identity_0""
+scroll down
+ Click on ""Save & Continue""
+ wait for 10 sec
+ //Residency
+open url""https://dev.kredsafe.net/user/residencies""
+Enter ""Test"" into ""Job Title""
+Enter ""Test"" into ""Employer ""
+Enter ""United States"" into ""Country""
+Enter ""New York"" into ""State""
+Enter ""New York"" into ""city""
+Enter ""Jan"" into ""start_month""
+Enter ""2021"" into ""we_start_year_identity_0""
+Enter ""Feb"" into ""end_month""
+Enter ""2024"" into ""we_end_year_identity_0""
+scroll down
+Click on ""Save & Continue""
+wait for 10 sec
+//Felloship
+open url""https://dev.kredsafe.net/user/fellowships""
+Enter ""Test"" into ""Job Title""
+Enter ""Test"" into ""Employer ""
+Enter ""United States"" into ""Country""
+Enter ""New York"" into ""State ""
+Enter ""New York"" into ""city""
+Enter ""Jan"" into ""start_month""
+Enter ""2021"" into ""we_start_year_identity_0""
+Enter ""Feb"" into ""end_month""
+Enter ""2024"" into ""we_end_year_identity_0""
+scroll down
+Click on ""Save & Continue""
+wait for 10 sec
+//state certificate
+open url""https://dev.kredsafe.net/user/certificates""
+Enter ""SrDoctor"" into ""Certification Name""
+Enter ""Alabama"" into ""authority_<?php echo e(0); ?>""
+Enter ""11/11/2022"" into ""Date of Certification ""
+scroll down
+Click on ""Save & Continue""
+wait for 10 sec
+//Board certificate
+open url""https://dev.kredsafe.net/user/board-certifications""
+Enter ""SrDoctor"" into ""Certification Name""
+Enter ""Alabama"" into ""Authority ""
+Enter ""11/11/2022"" into ""Date of Certification ""
+scroll down
+Click on ""Save & Continue""
+wait for 10 sec
+Click on the ""click here"" link"
+
+6	Verify Document Upload
+Login
+open url "https://dev.kredsafe.net/user/documents"
+click on the " Upload File"
+click on input with name "document_type" and value "1"
+select "Wyoming" from "state-list" 
+Enter stored value "Uploadresumedocx" into the input file "fileUpload"
+Click on "submit"
+wait for 10 sec
+click on the " Upload File"
+click on "Residency Certificate"
+select "Wyoming" from "state-list" 
+Enter stored value "docrc" into the input file "fileUpload"
+Click on "submit"
+wait for 10 sec
+click on the " Upload File"
+click on "State Controlled Substance"
+select "Wyoming" from "state-list" 
+Enter stored value "docscs" into the input file "fileUpload"
+Click on "submit"
+wait for 10 sec
+click on the " Upload File"
+click on "Medical License (1+)"
+select "Wyoming" from "state-list" 
+Enter stored value "docmedical" into the input file "fileUpload"
+Click on "submit"
+wait for 10 sec
+click on the " Upload File"
+click on "Medical Degree"
+select "Wyoming" from "state-list" 
+Enter stored value "docMD" into the input file "fileUpload"
+Click on "submit"
+wait for 10 sec
+click on the " Upload File"
+click on "Internship Certificate"
+select "Wyoming" from "state-list" 
+Enter stored value "docint" into the input file "fileUpload"
+Click on "submit"
+wait for 10 sec
+click on the " Upload File"
+click on "Fellowship Certificate (if applicable)"
+select "Wyoming" from "state-list" 
+Enter stored value "docfca" into the input file "fileUpload"
+Click on "submit"
+wait for 10 sec
+click on the " Upload File"
+click on "ECFMG (if applicable)"
+select "Wyoming" from "state-list" 
+Enter stored value "doccf" into the input file "fileUpload"
+Click on "submit"
+wait for 10 sec
+click on the " Upload File"
+click on "Board Certificate"
+select "Wyoming" from "state-list" 
+Enter stored value "docboard" into the input file "fileUpload"
+Click on "submit"
+wait for 10 sec
+click on the " Upload File"
+click on "Other"
+select "Wyoming" from "state-list" 
+Enter stored value "docoth" into the input file "fileUpload"
+Click on "submit"
+
+7	Verify Profile picture upload
+
+Login
+Click on the image inside the top navigation bar
+Click on the "Profile" button
+Click on the "Upload image" button
+Enter stored value "Profilepicture" into the input file "fileUpload"
+
+8	Verify Profile picture Delete
+Login
+Click on the image inside the top navigation bar
+Click on the "Profile" button
+Click on the "fas fa-close"
+Click on the "Yes" button
+
+9	Verify  Notest
+Login
+open url "https://dev.kredsafe.net/user/comments/view/Document/NDkz"
+enter "Upload file " into "Enter your message here"
+click on the "Submit"
+
+10	Verify Restore activity
+
+Login
+open url "https://dev.kredsafe.net/user/education"
+click on the "fa fa-recycle"
+click on the "checkAll"
+scroll down
+click on the "Restore"
+
+11	Verify Recent activity
+
+ Login
+Click on "Recent Activity"
+scroll down
+
+12	Verify Pending activity
+Login
+click on "pendingActivityTab" 
+click on "Fellowship "                   
+//click on the  "Packets" menu
+check that page contains "Fellowship"
+
+13	Verify Subsciption
+Enter the stored value "E-mail Address"  into "E-mail Address"
+Enter the stored value "Password"  into "Password"
+Click on the "Login" button
+scroll down
+Click the first "Subscribe" below "Standard"
+Click on the "Credit Card "button 
+Click on the "Confirm & Pay "button 
+Payment
+
+14	Verify  Standard Subsciption
+Enter the stored value "E-mail Address"  into "E-mail Address"
+Enter the stored value "Password"  into "Password"
+Click on the "Login" button
+wait for 10 sec
+Click on "1 Year" button
+Click on "Pay Full"
+Click the first "Subscribe" below "Standard"
+Click on the "Credit Card "button 
+Click on the "Confirm & Pay "button 
+Payment
+
+
+15	Verify Premium Subsciption
+
+Enter the stored value "E-mail Address"  into "E-mail Address"
+Enter the stored value "Password"  into "Password"
+Click on the "Login" button
+wait for 10 sec
+Click on "3 Years" button below "Premium"
+Click on "Pay Full"
+//Click on "1 yr ($3400 x 3 Pay)"
+//Click on " 6 mos ($1700 x 6 Pay)"
+// Click on "1 Year" button below "Premium"
+// Click on "Pay Full"
+//Click on "6 mos ($2000 x 2 Pay)"
+Click the first "Subscribe" below "Premium"
+Click on the "Credit Card "button 
+Click on the "Confirm & Pay "button 
+Payment
+
+16	Verify Change password
+
+Login
+open url "https://dev.kredsafe.net/user/change-password"
+enter "Nilesh@2030" into "Old Password"
+enter "Nilesh@2025" into "New Password"
+enter "Nilesh@2025" into "Confirm Password"
+click on the "Submit"
+
+17	Verify Forgot password
+
+
+Click on "Forgot Password"
+Enter "ts1234@yopmail.com" into "E-mail Address"
+Click on "Send Password Reset Link"
+open url "https://yopmail.com/"
+Enter "ts1234@yopmail.com" into "login"
+ Click on "material-icons-outlined f36"
+ Click on " click here"
+Enter "Nilesh@2025" into "Password"
+Enter "Nilesh@2025" into "Confirm Password"
+Click on the "Set Password"
+
+18	Verify OTP Login
+         Login
+ open new tab
+open url "https://yopmail.com/"
+Enter "hrd1@yopmail.com" into "login"
+Click on "material-icons-outlined f36"
+grab value by template "######" and save it as "OTP"
+switch to tab 1
+Enter saved value  "OTP" into "Enter OTP"
+Click on "Verify"
+
+19	Verify Make My Primary email
+
+Login
+open url "https://dev.kredsafe.net/user/overview"
+scroll down by 1/2 of the screen
+Enter "h29@yopmail.com" into "Alternate E-mail"
+Click on "swap_email"
+Click on "Yes"
+
+20	Verify From Request
+
+Login
+open url "https://dev.kredsafe.net/user/es_forms"
+click on "Request Form(s)"
+Enter stored value "Uploadresume" into the input file "template_ducument"
+enter "sam" into "Facility Name"
+enter "sam" into "Contact Person"
+enter "t3@yopmail.com" into "Facility E-mail Address"
+click on "Submit"
+
+
+21	Verify Packet Payment
+
+
+Login
+open url"https://dev.kredsafe.net/user/es-packets"
+click on "example-select-all"
+click on " Add to Cart"
+Click on the "Credit Card "button 
+Click on the "Confirm & Pay "button 
+Enter "4111111111111111" into "cardNumber" 
+Enter "12 / 28" into "cardExpiry" 
+Enter "123" into "cardCvc" 
+Enter "Dmac" into "billingName" 
+Click on  the "Enter address manually"
+select "United States" from dropdown "billingCountry"
+wait for 10 sec
+Enter "New York" into "billingAddressLine1"
+Enter "NY" into "billingLocality"
+Enter "110011" into "billingPostalCode"
+select "New York" from "billingAdministrativeArea"
+Click on the "Pay"
+wait for 10 sec
+
+22	Verify Profile Validation
+Login
+click on "notification" image
+click on " 1 Form Assigned "                   
+//click on the  "Packets" menu
+check that page contains "Please complete your profile before accessing the forms and packets area."
+
+23	Verify Form Payment
+
+Login
+open url"https://dev.kredsafe.net/user/es_forms"
+click on "example-select-all"
+click on " Add to Cart"
+Click on the "Credit Card "button 
+Click on the "Confirm & Pay "button 
+Payment
+
+24	":
+Verify Subscription cancel request notes.
+
+Login
+Open url"https://dev.kredsafe.net/user/subscription/dashboard"
+scroll down
+click on "cancel_request_tab"
+click on  "follow up"
+enter "TEST sep3" into "Enter your message "
+click on "Submit"
+wait for 10 sec
+scroll down
+click on "cancel_request_tab"
+click on 2nd "follow up"
+
+25	Verify login by OTP
+enter "rc44@yopmail.com" into "E-mail Address"
+enter "Nilesh@2025" into "Password"
+click "Login" button
+if page contains "Previous Login" then
+grab url and save it as "current"
+else
+open new tab
+open url "https://yopmail.com/"
+Enter "rc44@yopmail.com" into "login"
+Click on "material-icons-outlined f36"
+grab value by template "######" and save it as "OTP"
+switch to tab 1
+Enter saved value  "OTP" into "Enter OTP"
+Click on "Verify"
+end
+
+26	Verifyuser update by resume
+
+Login
+click on "Update from Resume" button
+Enter stored value "userresume" into the input file "fileUpload"
+click "Submit" button
+scroll down on "Submit"
+click "Submit" button
+wait for 4 sec
+
+
+27	"
+Verify Upgrade subscription plan.
+Login
+open url "https://dev.kredsafe.net/user/subscription/dashboard"
+Click on "Upgrade Plan"
+Click on "Upgrade to $4,000.00 plan"
+Click on the "Credit Card" button 
+Click on the "Confirm & Pay" button 
+Payment
+
+
+28	
+Verify Update subscription plan.
+
+Login
+open url "https://dev.kredsafe.net/user/subscription/dashboard"
+Click on "Cancel Subscription"
+Type "Test Cancel Subscription" into "Reason for cancelling the subscription?"
+Click on "Submit"
+
+29	"
+Verify Cancel Subscription request"
+
+Login
+open url "https://dev.kredsafe.net/user/subscription/dashboard"
+Click on "Cancel Subscription"
+Type "Test Cancel Subscription" into "Reason for cancelling the subscription?"
+Click on "Submit"
+
+30	"
+Verify Update subscription plan.(by selecting Pay Full)
+Login
+open url "https://dev.kredsafe.net/user/subscription/dashboard"
+Click on "Update Plan"
+select "Pay Full" from "Payment Options" dropdown list
+Click on "Add to cart"
+Click on the "Credit Card" button 
+Click on the "Confirm & Pay" button 
+Payment
+
+Reusable rule
+
+
+1	Login	
+"Enter the stored value ""E-mail Address""  into ""E-mail Address""
+Enter the stored value ""Password""  into ""Password""
+Click on the ""Login"" button
+Check that the page contains ""Welcome"""
+
+
+
+2	Logout
+
+Click on the image inside the top navigation bar
+Click on the "Sign out"button
+Check that the page contains "Sign into Your Account"
+
+3	Payment	
+Enter "4111111111111111" into "cardNumber" 
+Enter "12 / 28" into "cardExpiry" 
+Enter "123" into "cardCvc" 
+Enter "Dmac" into "billingName" 
+Click on  the "Enter address manually"
+select "United States" from dropdown "billingCountry"
+wait for 10 sec
+Enter "New York" into "billingAddressLine1"
+Enter "NY" into "billingLocality"
+Enter "110011" into "billingPostalCode"
+select "New York" from "billingAdministrativeArea"
+Click on the "Pay"
+wait for 10 sec
+4	Login Logout
+	Enter the stored value "E-mail Address"  into "E-mail Address"
+Enter the stored value "Password"  into "Password"
+Click on the "Login" button
+if page contains "Previous Login" then
+grab url and save it as "current"
+else
+open new tab
+open url "https://yopmail.com/"
+Enter the stored value "E-mail Address"  into "login"
+Click on "material-icons-outlined f36"
+grab value by template "######" and save it as "OTP"
+switch to tab 1
+Enter saved value  "OTP" into "Enter OTP"
+Click on "Verify"
+end
+Logout
+
+
+
+
+
+
+
+TestRigor 	TestRigor is a no-code AI-based test automation tool that allows users to create and maintain test cases using plain English instructions. It’s designed for QA teams, business users, and non-technical testers to automate end-to-end tests with minimal effort.
+
+
+TestRigor is designed for
+
+
+	"QA Engineers
+
+Manual Testers
+
+Business Analysts
+
+Developers "
+TestRigor Provides	"Screenshots for each step
+
+Execution logs
+
+Console/network logs
+
+Step-by-step breakdown"
+TestRigor Objective 	No coding or selector maintenance. Business users or manual testers can write full end-to-end tests in English, and the platform handles locator strategy, waits, and test reliability automatically.
+Paid Tool	"TestRigor is paid licence model,
+14 days free trial"
+Scope 	"1. No-code test writing in plain English
+
+2. AI-based element detection
+
+3. Timeouts are handled efficiently.
+
+4. Extremely low maintenance
+
+5. Cross-browser and mobile device support
+
+6. All-in-one platform
+
+7. Reusable steps and data-driven testing
+
+8. Built for non-technical users
+
+9. testRigor’s Test Case Recorder for chrome extension
+
+10. No need for XPath, CSS selectors, or IDs, reducing flakiness and maintenance.
+
+11. Ideal for QA analysts, manual testers, product owners, and BAs.
+
+12. No need to update tests when the UI changes unless the user-facing text changes
+"
+Limitations of testRigor	"1 Not open source
+
+2 Limited flexibility for custom logic or complex scripting
+
+3 Not ideal for QA/Developers who prefer code-based testing
+
+4 Tests may require updates when test data  for , uploaded files changes frequently
+
+5 Heavily dependent on visible text for element identification
+
+6 Limited control over browser internals (compared to tools like Playwright)
+
+7 It can be expensive for large teams
+
+8 No local test execution unlike Selenium or Playwright
+
+9 Not usable in air-gapped/offline environments
+
+10 For Mobile testing new rule and Test Data need to create
+
+11 Learning curve for using natural language effectively in complex scenarios
+
+12 Not suitable for complex scenario and  calculation logic
+
+testRigor has limited support for dynamic file uploads, requiring manual updates when the file changes."
+
+
+
+
+
+5	Credit Card
+	"Click on the ""Credit Card"" button 
+Click on the ""Confirm & Pay"" button "
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
