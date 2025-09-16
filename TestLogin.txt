@@ -633,7 +633,26 @@ Click on the ""Confirm & Pay"" button "
 		
 		
 
+Create new repository
+https://github.com/nilesh1710/TestRigor
 
+create folder and add txt file with all code
+
+
+cd C:\Users\Admin\Desktop\TestRigorTest
+git init
+git remote add origin  https://github.com/nilesh1710/TestRigor
+
+git add .
+git commit -m "Added initial testRigor test cases"
+git push -u origin master
+
+
+
+
+Push the local branch to GitHub
+
+git push --set-upstream origin master
 
 
 
