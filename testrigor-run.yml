@@ -1,0 +1,28 @@
+name: Run testRigor Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run testRigor test suite
+        env:
+          TESTRIGOR_API_KEY: ${{ secrets.xxxxMXPI }}
+        run: |
+          echo "Triggering testRigor test suite..."
+          response=$(curl -s -X POST "https://api.testrigor.com/v1/runs" \
+            -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{"testSuiteId": "iQXqgXmNSNrigj8HX"}')
+
+          echo "Response from testRigor:"
+          echo "$response"
