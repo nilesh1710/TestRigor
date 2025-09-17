@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-              - name: Run testRigor tests
+      - name: Run testRigor tests
         env:
           TESTRIGOR_API_KEY: ${{ secrets.xxxxMXPI }}
         run: |
@@ -21,6 +21,8 @@ jobs:
             -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
             -H "Content-Type: application/json" \
             -d '{"testSuiteId": "iQXqgXmNSNrigj8HX"}'
+
+
 
 
 
