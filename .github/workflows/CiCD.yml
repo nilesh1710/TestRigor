@@ -1,13 +1,23 @@
-#name: Sample Workflow
+name: testRigor CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
-  build:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Run echo
-        run: echo "CI pipeline is working!"
+      - name: Run testRigor tests
+        env:
+          TESTRIGOR_API_KEY: ${{ secrets.xxxxMXPI }}
+        run: |
+          curl -X POST "https://api.testrigor.com/v1/runs" \
+            -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{"testSuiteId": "iQXqgXmNSNrigj8HX"}'
