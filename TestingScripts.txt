@@ -495,6 +495,25 @@ Click on the "Credit Card" button
 Click on the "Confirm & Pay" button 
 Payment
 
+Verify successful login with valid username and password-Ai Generated
+login
+click "Login"
+enter "testlogin@testrigor-mail.com" into "E-mail Address"
+click "Login"
+check that page contains "E-mail address or password is incorrect."
+
+enter "validpassword123" into "Password"
+click "Login"
+check that page contains "Dashboard" or "Welcome" or "Logout
+
+
+
+
+
+
+
+
+
 Reusable rule
 
 
