@@ -1,0 +1,72 @@
+TestRigor 	TestRigor is a no-code AI-based test automation tool that allows users to create and maintain test cases using plain English instructions. It’s designed for QA teams, business users, and non-technical testers to automate end-to-end tests with minimal effort.
+
+
+TestRigor is designed for
+
+
+	"QA Engineers
+
+Manual Testers
+
+Business Analysts
+
+Developers "
+TestRigor Provides	"Screenshots for each step
+
+Execution logs
+
+Console/network logs
+
+Step-by-step breakdown"
+TestRigor Objective 	No coding or selector maintenance. Business users or manual testers can write full end-to-end tests in English, and the platform handles locator strategy, waits, and test reliability automatically.
+Paid Tool	"TestRigor is paid licence model,
+14 days free trial"
+Scope 	"1. No-code test writing in plain English
+
+2. AI-based element detection
+
+3. Timeouts are handled efficiently.
+
+4. Extremely low maintenance
+
+5. Cross-browser and mobile device support
+
+6. All-in-one platform
+
+7. Reusable steps and data-driven testing
+
+8. Built for non-technical users
+
+9. testRigor’s Test Case Recorder for chrome extension
+
+10. No need for XPath, CSS selectors, or IDs, reducing flakiness and maintenance.
+
+11. Ideal for QA analysts, manual testers, product owners, and BAs.
+
+12. No need to update tests when the UI changes unless the user-facing text changes
+"
+Limitations of testRigor	"1 Not open source
+
+2 Limited flexibility for custom logic or complex scripting
+
+3 Not ideal for QA/Developers who prefer code-based testing
+
+4 Tests may require updates when test data  for , uploaded files changes frequently
+
+5 Heavily dependent on visible text for element identification
+
+6 Limited control over browser internals (compared to tools like Playwright)
+
+7 It can be expensive for large teams
+
+8 No local test execution unlike Selenium or Playwright
+
+9 Not usable in air-gapped/offline environments
+
+10 For Mobile testing new rule and Test Data need to create
+
+11 Learning curve for using natural language effectively in complex scenarios
+
+12 Not suitable for complex scenario and  calculation logic
+
+testRigor has limited support for dynamic file uploads, requiring manual updates when the file changes."
