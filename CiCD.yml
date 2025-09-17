@@ -15,7 +15,7 @@ jobs:
 
       - name: Run testRigor tests
         env:
-          TESTRIGOR_API_KEY: ${{ secrets.xxxxMXPI }}
+          TESTRIGOR_API_KEY: ${{ secrets.xxxxMXPI}
         run: |
           curl -X POST "https://api.testrigor.com/v1/runs" \
             -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
