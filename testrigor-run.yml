@@ -1,28 +1,40 @@
-name: Run testRigor Tests
+- name: Run testRigor test suite and wait for results
+  env:
+    TESTRIGOR_API_KEY: ${{ secrets.xxxxMXPI }}
+  run: |
+    echo "Triggering testRigor test suite..."
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
+    # Trigger test run and extract runId
+    response=$(curl -s -X POST "https://api.testrigor.com/v1/runs" \
+      -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
+      -H "Content-Type: application/json" \
+      -d '{"testSuiteId": "iQXqgXmNSNrigj8HX"}')
 
-jobs:
-  run-tests:
-    runs-on: ubuntu-latest
+    echo "Response: $response"
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    runId=$(echo "$response" | jq -r '.runId')
+    echo "Run ID: $runId"
 
-      - name: Run testRigor test suite
-        env:
-          TESTRIGOR_API_KEY: ${{ secrets.xxxxMXPI }}
-        run: |
-          echo "Triggering testRigor test suite..."
-          response=$(curl -s -X POST "https://api.testrigor.com/v1/runs" \
-            -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
-            -H "Content-Type: application/json" \
-            -d '{"testSuiteId": "iQXqgXmNSNrigj8HX"}')
+    # Poll for test run status until finished
+    status="running"
+    while [[ "$status" == "running" || "$status" == "queued" ]]; do
+      sleep 10
+      result=$(curl -s -X GET "https://api.testrigor.com/v1/runs/$runId" \
+        -H "Authorization: Bearer $TESTRIGOR_API_KEY")
+      status=$(echo "$result" | jq -r '.status')
+      echo "Current status: $status"
+    done
 
-          echo "Response from testRigor:"
-          echo "$response"
+    # Get test results summary
+    passed=$(echo "$result" | jq -r '.summary.passed')
+    failed=$(echo "$result" | jq -r '.summary.failed')
+
+    echo "Tests passed: $passed"
+    echo "Tests failed: $failed"
+
+    if [[ "$failed" -gt 0 ]]; then
+      echo "Some tests failed!"
+      exit 1  # Fail the GitHub Action job
+    else
+      echo "All tests passed!"
+    fi
