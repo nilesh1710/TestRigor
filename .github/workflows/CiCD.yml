@@ -1,29 +1,14 @@
-name: testRigor CI
+- name: Run testRigor test case
+  env:
+    TESTRIGOR_API_KEY: ${{ secrets.TESTRIGOR_API_KEY }}
+  run: |
+    curl -X POST "https://api.testrigor.com/v1/runs" \
+      -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
+      -H "Content-Type: application/json" \
+      -d '{
+        "testCaseId": "vQZGGbZW2qyQBNf2s"
+      }'
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-jobs:
-  run-tests:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Run testRigor test case
-        env:
-          TESTRIGOR_API_KEY: ${{ secrets.TESTRIGOR_API_KEY }}
-        run: |
-          curl -X POST "https://api.testrigor.com/v1/runs" \
-            -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "testSuiteId": "iQXqgXmNSNrigj8HX",
-              "tests": ["Verify subscription scroll down to Total"]
-            }'
 
 
 
