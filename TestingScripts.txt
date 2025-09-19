@@ -493,6 +493,23 @@ select "Pay Full" from "Payment Options" dropdown list
 Click on "Add to cart"
 Click on the "Credit Card" button 
 Click on the "Confirm & Pay" button 
+
+31.Verify subscription scroll down to Total
+enter "sep9@yopmail.com" into "E-mail Address"
+enter "Nilesh@2025" into "Password"
+Click "Login" button
+open url "https://dev.kredsafe.net/user/subscription/dashboard"
+scroll down on "$ 5,712.62"
+scroll down on "$ 140.00"
+scroll down on "$ 5,712.62"
+
+
+
+
+
+
+
+
 Payment
 
 Verify successful login with valid username and password-Ai Generated
