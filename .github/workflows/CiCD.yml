@@ -3,7 +3,7 @@ name: testRigor CI
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
@@ -13,14 +13,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Run testRigor tests
+      - name: Run testRigor test case
         env:
-          TESTRIGOR_API_KEY: ${{ secrets.xxxxMXPI }}
+          TESTRIGOR_API_KEY: ${{ secrets.TESTRIGOR_API_KEY }}
         run: |
           curl -X POST "https://api.testrigor.com/v1/runs" \
             -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
             -H "Content-Type: application/json" \
-            -d '{"testSuiteId": "iQXqgXmNSNrigj8HX"}'
+            -d '{
+              "testSuiteId": "iQXqgXmNSNrigj8HX",
+              "tests": ["Verify subscription scroll down to Total"]
+            }'
+
 
 
 
