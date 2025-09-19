@@ -1,13 +1,25 @@
-- name: Run testRigor test case
-  env:
-    TESTRIGOR_API_KEY: ${{ secrets.TESTRIGOR_API_KEY }}
-  run: |
-    curl -X POST "https://api.testrigor.com/v1/runs" \
-      -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
-      -H "Content-Type: application/json" \
-      -d '{
-        "testCaseId": "vQZGGbZW2qyQBNf2s"
-      }'
+name: Run TestRigor Test Case
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-testrigor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run testRigor test case
+        env:
+          TESTRIGOR_API_KEY: ${{ secrets.TESTRIGOR_API_KEY }}
+        run: |
+          curl -X POST "https://api.testrigor.com/v1/runs" \
+            -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "testCaseId": "vQZGGbZW2qyQBNf2s"
+            }'
+
 
 
 
