@@ -21,6 +21,5 @@ jobs:
             -H "Authorization: Bearer $TESTRIGOR_API_KEY" \
             -H "Content-Type: application/json" \
             -d '{
-              "testSuiteId": "iQXqgXmNSNrigj8HX",
-              "tests": ["Verify subscription scroll down to Total"]
+              "testSuiteId": "iQXqgXmNSNrigj8HX"
             }'
