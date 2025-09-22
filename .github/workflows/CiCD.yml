@@ -3,7 +3,7 @@ name: Run TestRigor Test Case
 on:
   push:
     branches:
-      - master
+      -master
 
 jobs:
   run-testrigor:
@@ -19,6 +19,7 @@ jobs:
             -d '{
               "testCaseId": "vQZGGbZW2qyQBNf2s"
             }'
+
 
 
 
