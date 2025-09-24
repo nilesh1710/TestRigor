@@ -504,7 +504,21 @@ scroll down on "$ 140.00"
 scroll down on "$ 5,712.62"
 
 
+32.Verify the application locks the account after multiple failed login attempts and displays appropriate error message.
+enter "sep23@yopmail.com" into "E-mail Address"
+enter "wrongpassword1" into "Password"
+Triple-click  "Login" 
+Triple-click  "Login"
+Triple-click  "Login"
+wait for 3 sec
+check that page contains "Too many login attempts."
 
+33.Verify the application locks the account after multiple failed login attempts and displays appropriate error message.
+   By Data set csv file 
+Enter the stored value "E-mail Address"  into "E-mail Address"
+Enter the stored value "Password"  into "Password"
+Click "Login"
+check that page contains "Too many login attempts. Please try again "
 
 
 
