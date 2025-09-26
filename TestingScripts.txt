@@ -520,6 +520,16 @@ Enter the stored value "Password"  into "Password"
 Click "Login"
 check that page contains "Too many login attempts. Please try again "
 
+34.API Testing 1
+mock api call POST "https://jsonplaceholder.typicode.com/todos" with headers "Content-Type:application/json" and "Accept:application/json" and body "{\"desc\":\"New Todo\"}"returning payload "Todo created" and http code 200
+
+35.API Testing 2
+call api post "http://dummy.restapiexample.com/api/v1/create" with headers "Content-Type:application/json" and "Accept:application/json" and body "{\"name\":\"James\",\"salary\":\"123\",\"age\":\"32\"}" and get "$.data.name" and save it as "createdName"
+check that stored value "createdName" itself contains "James"
+
+36.API Testing 3
+mock api call "https://jsonplaceholder.typicode.com/todos/1" returning body "{\"mock\": \"mocked response\"}"
+
 
 
 
